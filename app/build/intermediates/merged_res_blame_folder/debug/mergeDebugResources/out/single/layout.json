@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.marching2more.marchersonly.app-mergeDebugResources-30:/layout/activity_agent_contact.xml",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_agent_contact.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-mergeDebugResources-30:/layout/item_step.xml",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/item_step.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-mergeDebugResources-30:/layout/activity_prosperity.xml",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_prosperity.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-mergeDebugResources-30:/layout/activity_home.xml",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_home.xml"
+    }
+]

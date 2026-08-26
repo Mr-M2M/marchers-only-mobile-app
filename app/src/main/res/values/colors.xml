@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="marchers_green_dark">#0B2818</color>
+    <color name="marchers_green">#12351F</color>
+    <color name="marchers_green_light">#1C4A2C</color>
+    <color name="marchers_gold">#D4AF37</color>
+    <color name="marchers_gold_light">#E8CE73</color>
+    <color name="off_white">#F5F1E6</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="text_body">#2A2A24</color>
+    <color name="text_muted">#6B6B62</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="nav_unselected">#8FA593</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MarchersOnly" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/marchers_green</item>
+        <item name="colorPrimaryDark">@color/marchers_green_dark</item>
+        <item name="colorAccent">@color/marchers_gold</item>
+        <item name="colorSecondary">@color/marchers_gold</item>
+        <item name="android:statusBarColor">@color/marchers_green_dark</item>
+        <item name="android:windowBackground">@color/off_white</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="actionBarStyle">@style/MarchersOnly.ActionBar</item>
+    </style>
+
+    <style name="MarchersOnly.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/marchers_green</item>
+        <item name="titleTextStyle">@style/MarchersOnly.ActionBar.Title</item>
+    </style>
+
+    <style name="MarchersOnly.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/marchers_gold_light</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HeadingText">
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textColor">@color/marchers_green_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/text_body</item>
+    </style>
+
+    <style name="PillButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/marchers_gold</item>
+        <item name="android:textColor">@color/marchers_green_dark</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PillButton.Outline" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/marchers_green</item>
+        <item name="android:textColor">@color/marchers_green</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

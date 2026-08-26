@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marchers Only</string>
+    <string name="tagline">You Are Meant For More</string>
+
+    <string name="home_title">Marchers Only</string>
+    <string name="home_welcome">Welcome to Marchers Only</string>
+    <string name="home_subtitle">Your path to homeownership and lasting wealth starts here. #KeepMarching2More</string>
+    <string name="card_prosperity_title">Prosperity Path</string>
+    <string name="card_prosperity_desc">Five simple steps from pre-approval to building equity.</string>
+    <string name="card_agent_title">Meet Your Agent</string>
+    <string name="card_agent_desc">Talk to Donavan McFadden at Creed Realty — call, text, or email.</string>
+
+    <string name="prosperity_title">Prosperity Path</string>
+    <string name="step1_title">Get Pre-Approved</string>
+    <string name="step1_desc">Know your budget before you shop, so every showing is a serious one.</string>
+    <string name="step2_title">Find Your Perfect Match</string>
+    <string name="step2_desc">Tour homes with a Marchers Only agent who knows the market.</string>
+    <string name="step3_title">Make a Winning Offer</string>
+    <string name="step3_desc">Strategy and negotiation that gets your offer accepted.</string>
+    <string name="step4_title">Close With Confidence</string>
+    <string name="step4_desc">Paperwork handled end-to-end — keys in your hand, stress-free.</string>
+    <string name="step5_title">Build Equity &amp; Grow</string>
+    <string name="step5_desc">Track your investment as it grows toward lasting prosperity.</string>
+
+    <string name="agent_title">Your Agent</string>
+    <string name="agent_name">Donavan McFadden</string>
+    <string name="agent_role">Realtor® · Creed Realty</string>
+    <string name="agent_bio">Real estate professional helping clients across Norfolk, VA turn \"someday\" into a closing date. Marchers Only: you are meant for more.</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_text">Text</string>
+    <string name="btn_email">Email</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_prosperity">Prosperity</string>
+    <string name="nav_agent">Agent</string>
+</resources>

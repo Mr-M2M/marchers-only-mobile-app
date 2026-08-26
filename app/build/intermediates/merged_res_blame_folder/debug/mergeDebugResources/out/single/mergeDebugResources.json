@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/layout_activity_home.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_playfair_bold.ttf.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/playfair_bold.ttf"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_inter_semibold.ttf.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/inter_semibold.ttf"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_inter_regular.ttf.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/inter_regular.ttf"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_inter_medium.ttf.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_toolbar_logo.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_toolbar_logo.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_prosperity.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_prosperity.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_inter.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/inter.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_home.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_email.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_bg_step_number.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/bg_step_number.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_arrow_forward.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_arrow_forward.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/layout_activity_agent_contact.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_agent_contact.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_sms.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_sms.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_hero_home.jpg.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/hero_home.jpg"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_playfair_display.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/playfair_display.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_call.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_call.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/font_playfair_semibold.ttf.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/font/playfair_semibold.ttf"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/color_bottom_nav_color.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/color/bottom_nav_color.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_agent.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_agent.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/layout_item_step.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/item_step.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/layout_activity_prosperity.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/layout/activity_prosperity.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_bg_avatar_circle.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/bg_avatar_circle.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_bg_icon_chip.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/bg_icon_chip.xml"
+    },
+    {
+        "merged": "com.marching2more.marchersonly.app-debug-31:/drawable_ic_check_circle.xml.flat",
+        "source": "com.marching2more.marchersonly.app-main-33:/drawable/ic_check_circle.xml"
+    }
+]
