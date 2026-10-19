@@ -26,6 +26,8 @@
             android:name=".AgentContactActivity"
             android:exported="false" />
 
+        <activity android:name=".MortgageMarketplaceActivity" android:exported="false" />
+        <activity android:name=".TransactionCoordinatorActivity" android:exported="false" />
     </application>
 
 </manifest>
