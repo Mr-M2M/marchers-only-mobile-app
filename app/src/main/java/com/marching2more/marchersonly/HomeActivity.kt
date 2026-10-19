@@ -33,6 +33,14 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, AgentContactActivity::class.java))
         }
 
+        // Additional module entry point, preserving the existing navigation and screens.
+        val mortgageButton = android.widget.Button(this).apply {
+            text = "MORECLOSE | Compare Mortgage Offers (Demo)"
+            setOnClickListener { startActivity(Intent(this@HomeActivity, MortgageMarketplaceActivity::class.java)) }
+        }
+        val container = (binding.root.getChildAt(0) as android.widget.ScrollView)
+            .getChildAt(0) as android.widget.LinearLayout
+        container.addView(mortgageButton)
         NavHelper.setup(this, binding.bottomNav, R.id.nav_home)
     }
 }
