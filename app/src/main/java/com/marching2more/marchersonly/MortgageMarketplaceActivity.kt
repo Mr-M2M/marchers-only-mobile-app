@@ -3,8 +3,6 @@ package com.marching2more.marchersonly
 import android.os.Bundle
 import android.graphics.Color
 import android.graphics.Typeface
-import android.view.Gravity
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
@@ -29,6 +27,14 @@ class MortgageMarketplaceActivity : AppCompatActivity() {
         Offer("Lender B · DEMO", 6.00, 6.29, 6900, 4.5, 183, 35),
         Offer("Lender C · DEMO", 6.35, 6.45, 1850, 4.8, 397, 24)
     )
+    private fun fiveYearCost(principal: Double, rate: Double, fees: Int): Double {
+        val r = rate / 1200.0
+        val monthly = payment(principal, rate)
+        val remainingBalance = principal * (1 + r).pow(60) -
+            monthly * ((1 + r).pow(60) - 1) / r
+        // Financing expense over five years: payments + unpaid principal + lender fees - original loan.
+        return monthly * 60 + remainingBalance - principal + fees
+    }
     private fun payment(principal: Double, rate: Double): Double {
         val monthly = rate / 1200.0
         return principal * monthly / (1 - (1 + monthly).pow(-360))
@@ -55,13 +61,32 @@ class MortgageMarketplaceActivity : AppCompatActivity() {
         root.addView(line("MORECLOSE | Marchers Only", 23f, true))
         root.addView(line("One intake. Multiple lenders. Transparent costs. Verified service.", 14f))
         root.addView(line("DEMO ONLY — no real applications or lender connections.", 12f, true))
-        root.addView(line("Loan amount ($)", 15f, true))
-        val amount = EditText(this).apply {
+        root.addView(line("Step 1 of 2 · Explore financing scenarios", 17f, true))
+        root.addView(line("Purchase price ($)", 15f, true))
+        val price = EditText(this).apply {
             inputType = android.text.InputType.TYPE_CLASS_NUMBER
-            setText("350000")
-            contentDescription = "Mortgage loan amount"
+            setText("375000")
+            contentDescription = "Home purchase price"
         }
+        root.addView(price)
+        root.addView(line("Down payment ($)", 15f, true))
+        val down = EditText(this).apply {
+            inputType = android.text.InputType.TYPE_CLASS_NUMBER
+            setText("25000")
+            contentDescription = "Down payment"
+        }
+        root.addView(down)
+        root.addView(line("Loan program to explore", 15f, true))
+        val programs = android.widget.Spinner(this).apply {
+            adapter = android.widget.ArrayAdapter(this@MortgageMarketplaceActivity,
+                android.R.layout.simple_spinner_dropdown_item,
+                arrayOf("Conventional — educational demo", "FHA — educational demo", "VA — educational demo"))
+        }
+        root.addView(programs)
+        root.addView(line("Calculated requested loan amount", 15f, true))
+        val amount = line("", 18f, true)
         root.addView(amount)
+        root.addView(line("Step 2 of 2 · Compare illustrative proposals", 17f, true))
         val results = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         val sortChoices = arrayOf("Lowest 5-year cost", "Lowest upfront fees", "Highest satisfaction", "Fastest closing")
         val spinner = android.widget.Spinner(this).apply {
@@ -73,21 +98,28 @@ class MortgageMarketplaceActivity : AppCompatActivity() {
         val compare = Button(this).apply { text = "Compare sample lenders"; setBackgroundColor(gold); setTextColor(green) }
         root.addView(compare)
         root.addView(results)
-        root.addView(line("Next phase: invite-only authentication, explicit borrower consent, verified lender submissions, official Loan Estimates, reviews tied to completed closings, and secure title handoff.", 13f))
-        root.addView(line("Ratings, rates, APRs, fees, and closing times shown here are fictional. The 5-year estimate is only 60 principal-and-interest payments plus fees; it excludes remaining balance, taxes, insurance and other financing costs.", 12f))
+        root.addView(line("No application has been submitted. For real quotes, users must separately authorize sharing with appropriately licensed lenders. The app currently collects no contact, identity, or financial account information.", 13f))
+        root.addView(line("Upcoming production work: invite-only authentication, consent receipts, verified lender submissions, Loan Estimate ingestion, verified post-closing reviews, and secure title handoff.", 13f))
+        root.addView(line("Ratings, rates, APRs, fees, and closing times shown here are fictional. The 5-year financing-cost estimate includes payments, remaining principal balance, and lender fees, less original loan principal; excludes discounting, taxes, insurance, mortgage insurance, funding fees and other costs.", 12f))
 
         fun render() {
             results.removeAllViews()
-            val principal = amount.text.toString().toDoubleOrNull()
-            if (principal == null || principal <= 0 || principal > 10000000) {
-                results.addView(line("Enter a valid loan amount between $1 and $10 million."))
+            val purchasePrice = price.text.toString().toDoubleOrNull()
+            val downPayment = down.text.toString().toDoubleOrNull()
+            if (purchasePrice == null || downPayment == null ||
+                purchasePrice <= 0 || purchasePrice > 10000000 ||
+                downPayment < 0 || downPayment >= purchasePrice) {
+                amount.text = "Check purchase price and down payment"
+                results.addView(line("Enter a valid price and a nonnegative down payment below the price."))
                 return
             }
+            val principal = purchasePrice - downPayment
+            amount.text = currency.format(principal)
             val ranked = when (spinner.selectedItemPosition) {
                 1 -> offers.sortedBy { it.fees }
                 2 -> offers.sortedByDescending { it.satisfaction }
                 3 -> offers.sortedBy { it.days }
-                else -> offers.sortedBy { payment(principal, it.rate) * 60 + it.fees }
+                else -> offers.sortedBy { fiveYearCost(principal, it.rate, it.fees) }
             }
             ranked.forEachIndexed { index, offer ->
                 val card = LinearLayout(this).apply {
@@ -104,9 +136,10 @@ class MortgageMarketplaceActivity : AppCompatActivity() {
                 card.addView(line("Rate ${offer.rate}%  •  APR ${offer.apr}%", 15f))
                 card.addView(line("Monthly P&I: ${currency.format(payment(principal, offer.rate))}", 15f))
                 card.addView(line("Lender fees: ${currency.format(offer.fees)}", 15f))
-                card.addView(line("Illustrative 5-year payments + fees: ${currency.format(payment(principal, offer.rate) * 60 + offer.fees)}", 14f))
+                card.addView(line("Illustrative 5-year financing expense: ${currency.format(fiveYearCost(principal, offer.rate, offer.fees))}", 14f))
                 card.addView(line("Demo happiness: ${offer.satisfaction}/5 (${offer.reviews} fictional reviews)", 14f))
                 card.addView(line("Demo timeline: ${offer.days} days", 14f))
+                card.addView(line("Program selected: ${programs.selectedItem} — offers are NOT program-specific.", 12f))
                 results.addView(card)
             }
         }
