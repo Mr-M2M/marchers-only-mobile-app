@@ -41,6 +41,11 @@ class HomeActivity : AppCompatActivity() {
         val container = (binding.root.getChildAt(0) as android.widget.ScrollView)
             .getChildAt(0) as android.widget.LinearLayout
         container.addView(mortgageButton)
+        val transactionButton = android.widget.Button(this).apply {
+            text = "MORECLOSE | Transaction Coordination (Demo)"
+            setOnClickListener { startActivity(Intent(this@HomeActivity, TransactionCoordinatorActivity::class.java)) }
+        }
+        container.addView(transactionButton)
         NavHelper.setup(this, binding.bottomNav, R.id.nav_home)
     }
 }
